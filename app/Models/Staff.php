@@ -22,7 +22,7 @@ class Staff extends Model
 
 
     protected $fillable = [
-        'name',
+        'kategori',
         'nama_staff',
         'username',
         'email',

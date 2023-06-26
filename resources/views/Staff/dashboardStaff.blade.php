@@ -44,10 +44,11 @@
         <th>Tanggal Keluar</th>
     </tr>
     @foreach ($Staff as $staffDash)
+    {{-- @dd($staffDash); --}}
     <tr>
         {{-- <td>{{ $barang_masuk->id }}</td> --}}
-        <td>{{ $staffDash->staff->nama_staff }}</td>
-        <td>{{ $staffDash->barang->nama_barang }}</td>
+        <td>{{ $staffDash->nama_staff }}</td>
+        <td>{{ $staffDash->nama_barang }}</td>
         <td>{{ $staffDash->jumlah }}</td>
         <td>{{ $staffDash->harga }}</td>
         <td>{{ $staffDash->total }}</td>
@@ -57,8 +58,7 @@
     @endforeach
 </table><br>
 
-<a class="btn btn-success mt-3" href="{{ route('dashboardStaff') }}">Kembali</a><br><br>
-{{ $Staff->links() }}
+{{-- {{ $Staff->links() }} --}}
 
 @endsection
 

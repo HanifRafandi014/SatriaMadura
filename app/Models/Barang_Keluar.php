@@ -27,8 +27,7 @@ class Barang_Keluar extends Model
         'tanggal_keluar',
     ];
 
-    public function staff()
-    {
+    public function staff(){
         return $this->belongsTo(Staff::class);
     }
 
